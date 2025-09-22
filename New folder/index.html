@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Average Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #36531d;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #35b840;
+}
+
+p {
+    margin: 8px 0;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Simple Average Finder</h2>
+
+        <label for="score1">Score 1:</label>
+        <input type="number" id="score1" value="">
+
+        <label for="score2">Score 2:</label>
+        <input type="number" id="score2" value="">
+
+        <button id="compute-btn">Compute</button>
+
+        <p id="average">Average: </p>
+        <p id="result">Passed? </p>
+    </div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
